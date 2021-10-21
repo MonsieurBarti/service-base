@@ -1,0 +1,35 @@
+routing:
+    - name: create
+      controller: create
+      path: /
+      method: POST
+      middleware: default.default
+      token: required
+
+    - name: getByID
+      controller: getByID
+      path: /:id_company
+      method: GET
+      middleware: default.default
+      token: required
+
+    - name: getAll
+      controller: getAll
+      path: /
+      method: GET
+      middleware: default.default
+      token: required
+
+    - name: update
+      controller: update
+      path: /:id_company
+      method: PUT
+      middleware: default.default
+      token: required
+
+    - name: remove
+      controller: remove
+      path: /:id_company
+      method: DELETE
+      middleware: default.default
+      token: required
